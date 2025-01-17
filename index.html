@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
-    <h1 class="text-2xl text-center">Hello Tailwind</h1>
+    <!-- bg-[url('/images/banner-bg.jpg')] -->
+    <div class=" bg-[url('./images/banner-bg.jpg')] bg-cover bg-center bg-contain bg-no-repeat max-w-full max-h-fit px-28">
+
+        <header class="max-w-full">
+            <div class="grid grid-cols-5">
+                <div class="col-span-1 px-10 py-5">
+                    <img src="images/logo.png" alt="">
+                </div>
+            
+                <ul class="flex col-span-4 justify-evenly items-center">
+                    <li>Home</li>
+                    <li>Our Shop</li>
+                    <li>Product Details</li>
+                    <li>Contact Us</li>
+                    <li>Sign In</li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    
 </body>
 </html>
