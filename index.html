@@ -6,25 +6,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body>
-    <!-- bg-[url('/images/banner-bg.jpg')] -->
-    <div class=" bg-[url('./images/banner-bg.jpg')] bg-cover bg-center bg-contain bg-no-repeat max-w-full max-h-fit px-28">
+<body class="font-sans">
+    
+    <div style="background-image: url('images/banner-bg.jpg');" class="bg-[url('images/banner-bg.jpg')] bg-blue-500 bg-cover bg-center bg-contain bg-no-repeat max-w-full">
 
-        <header class="max-w-full">
-            <div class="grid grid-cols-5">
-                <div class="col-span-1 px-10 py-5">
-                    <img src="images/logo.png" alt="">
+        <!-- wrapper -->
+        <div class="max-w-7xl mx-auto">
+
+
+             <header class="">
+                <div class="grid grid-cols-5 py-3">
+                    <div class="col-span-1 px-10 py-5">
+                        <img src="images/logo.png" class="h-18" alt="">
+                    </div>
+                
+                    <ul class="flex col-span-4 justify-end gap-16 items-center text-white font-extralight">
+                        <li class="bg-gray-50 bg-opacity-15 rounded-full px-5 py-2">Home</li>
+                        <li>Our Shop</li>
+                        <li>Product Details</li>
+                        <li>Contact Us</li>
+                        <li class="bg-red-500 rounded-full px-5 py-2">Sign In</li>
+                    </ul>
                 </div>
+            </header>
+
             
-                <ul class="flex col-span-4 justify-evenly items-center">
-                    <li>Home</li>
-                    <li>Our Shop</li>
-                    <li>Product Details</li>
-                    <li>Contact Us</li>
-                    <li>Sign In</li>
-                </ul>
-            </div>
-        </header>
+
+
+
+
+        </div>
+   
     </div>
     
 </body>
