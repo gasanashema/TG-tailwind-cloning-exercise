@@ -649,6 +649,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -670,12 +674,21 @@ video {
   height: fit-content;
 }
 
+
 .h-1 {
   height: 0.25rem;
 }
 
 .h-10 {
   height: 2.5rem;
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+
 }
 
 .max-h-\[400px\] {
@@ -696,6 +709,16 @@ video {
 
 .w-\[50\%\] {
   width: 50%;
+
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-full {
+  width: 100%;
+
 }
 
 .w-\[500px\] {
@@ -717,6 +740,27 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-6 {
+  max-width: 1.5rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.max-w-4 {
+  max-width: 1rem;
+
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-4xl {
@@ -779,10 +823,6 @@ video {
   align-items: center;
 }
 
-.items-stretch {
-  align-items: stretch;
-}
-
 .justify-start {
   justify-content: flex-start;
 }
@@ -819,6 +859,7 @@ video {
   gap: 2rem;
 }
 
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -830,6 +871,7 @@ video {
 .gap-5 {
   gap: 1.25rem;
 }
+
 
 .rounded-2xl {
   border-radius: 1rem;
@@ -861,6 +903,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-b-3xl {
@@ -962,6 +1008,16 @@ video {
   padding: 1.25rem;
 }
 
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1035,6 +1091,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pb-0 {
@@ -1115,6 +1176,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1187,6 +1253,24 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
@@ -1213,6 +1297,7 @@ video {
 }
 
 @media (min-width: 1024px) {
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -1248,6 +1333,15 @@ video {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
   }
 
   .lg\:text-2xl {
@@ -1269,6 +1363,14 @@ video {
     grid-column: span 4 / span 4;
   }
 
+  .xl\:-ml-24 {
+    margin-left: -6rem;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
   .xl\:grid {
     display: grid;
   }
@@ -1277,12 +1379,29 @@ video {
     height: 100%;
   }
 
+
+  .xl\:h-7 {
+    height: 1.75rem;
+  }
+
+
   .xl\:w-64 {
     width: 16rem;
   }
 
   .xl\:w-full {
     width: 100%;
+
+  }
+
+  .xl\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .xl\:max-w-7xl {
+    max-width: 80rem;
+
   }
 
   .xl\:grid-cols-3 {
@@ -1297,6 +1416,7 @@ video {
     justify-content: flex-end;
   }
 
+ 
   .xl\:gap-8 {
     gap: 2rem;
   }
@@ -1311,11 +1431,43 @@ video {
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .xl\:rounded-full {
+    border-radius: 9999px;
+  }
+
   .xl\:p-7 {
     padding: 1.75rem;
   }
 
+  .xl\:p-4 {
+    padding: 1rem;
+  }
+
+  .xl\:p-12 {
+    padding: 3rem;
+  }
+
+  .xl\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .xl\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .xl\:pr-44 {
     padding-right: 11rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
