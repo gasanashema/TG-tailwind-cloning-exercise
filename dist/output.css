@@ -570,12 +570,16 @@ video {
   right: 0.75rem;
 }
 
-.z-10 {
-  z-index: 10;
+.right-16 {
+  right: 4rem;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
+.right-1 {
+  right: 0.25rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-0 {
@@ -682,16 +686,96 @@ video {
   width: 16rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[500px\] {
   width: 500px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[80\] {
+  width: 80;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[full\] {
+  width: full;
+}
+
+.w-\[8\] {
+  width: 8;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[0\%\] {
+  width: 0%;
+}
+
+.w-\[\%\] {
+  width: %;
+}
+
+.w-\[85\%\] {
+  width: 85%;
+}
+
+.w-\[80\=2\%\] {
+  width: 80=2%;
+}
+
+.w-\[82\%\] {
+  width: 82%;
+}
+
+.w-\[8\%\] {
+  width: 8%;
+}
+
+.w-\[87\%\] {
+  width: 87%;
+}
+
+.w-\[86\%\] {
+  width: 86%;
+}
+
+.w-\[50\] {
+  width: 50;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[47\%\] {
+  width: 47%;
+}
+
+.w-\[4\%\] {
+  width: 4%;
 }
 
 .max-w-3xl {
@@ -715,6 +799,14 @@ video {
   max-width: 100%;
 }
 
+.max-w-3 {
+  max-width: 0.75rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -727,16 +819,16 @@ video {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .content-center {
@@ -985,6 +1077,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1029,6 +1131,10 @@ video {
   text-align: center;
 }
 
+.align-super {
+  vertical-align: super;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1061,6 +1167,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1161,6 +1272,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:right-14 {
+    right: 3.5rem;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -1169,12 +1288,33 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
   .lg\:grid {
     display: grid;
   }
 
+  .lg\:h-96 {
+    height: 24rem;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .lg\:w-52 {
+    width: 13rem;
   }
 
   .lg\:max-w-7xl {
@@ -1183,6 +1323,10 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-rows-3 {
@@ -1197,6 +1341,10 @@ video {
     align-content: space-evenly;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:justify-evenly {
     justify-content: space-evenly;
   }
@@ -1205,13 +1353,45 @@ video {
     gap: 0px;
   }
 
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pl-9 {
     padding-left: 2.25rem;
+  }
+
+  .lg\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-2xl {
@@ -1219,8 +1399,17 @@ video {
     line-height: 2rem;
   }
 
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:font-light {
     font-weight: 300;
+  }
+
+  .lg\:font-bold {
+    font-weight: 700;
   }
 }
 
