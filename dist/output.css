@@ -773,6 +773,10 @@ video {
   gap: 2rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -877,12 +881,22 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\'images\/banner-bg\.jpg\'\)\] {
-  background-image: url('images/banner-bg.jpg');
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\'images\/footer-bg\.jpg\'\)\] {
-  background-image: url('images/footer-bg.jpg');
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[url\(\'\.\.\/images\/banner-bg\.jpg\'\)\] {
+  background-image: url('../images/banner-bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/footer-bg\.jpg\'\)\] {
+  background-image: url('../images/footer-bg.jpg');
 }
 
 .bg-cover {
@@ -1042,6 +1056,14 @@ video {
   padding-top: 12rem;
 }
 
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1080,6 +1102,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1110,6 +1137,22 @@ video {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-black {
@@ -1308,6 +1351,11 @@ video {
     padding: 5rem;
   }
 
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1338,11 +1386,6 @@ video {
     padding-bottom: 1.25rem;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:pb-36 {
     padding-bottom: 9rem;
   }
@@ -1353,6 +1396,14 @@ video {
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .md\:pb-40 {
+    padding-bottom: 10rem;
   }
 
   .md\:text-left {
@@ -1376,6 +1427,11 @@ video {
   .md\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
+
+  .md\:text-violet-500 {
+    --tw-text-opacity: 1;
+    color: rgb(139 92 246 / var(--tw-text-opacity, 1));
   }
 }
 
@@ -1596,6 +1652,10 @@ video {
 
   .xl\:justify-end {
     justify-content: flex-end;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
   }
 
   .xl\:gap-16 {
